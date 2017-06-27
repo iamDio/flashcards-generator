@@ -1,8 +1,10 @@
 module.exports  = ClozeCard;
 
 
-function ClozeCard(text,cloze,partial,fullText){
-this.text = text;
+function ClozeCard(fullText,partial,cloze){
+
+this.fullText = fullText;
+this.partial = partial;
 this.cloze = cloze;
 
 
@@ -18,4 +20,8 @@ Use prototypes to attach these methods, wherever possible.*/
 }
 
 
-var clozeDeleted = new ()
+var question1 = new ClozeCard('Rome is the capital of Italy', '... is the capital of Italy','Rome');
+
+console.log(question1.partial)
+console.log();
+console.log(question1.fullText)
